@@ -8,7 +8,7 @@ import java.util.Iterator;
  * 	（2）链表的使用空间和元素数量直接成正比，但需要引用访问任意元素
  * 3.bag, stack, queue是三种常用的可迭代的集合类型
  */
-public class Bag<Item> implements Iterable<Item>{
+public class Bag<Item> implements Iterable<Item> {
 	private Node first;
 	private int N;
 	

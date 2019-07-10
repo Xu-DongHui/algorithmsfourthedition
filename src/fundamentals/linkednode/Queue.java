@@ -24,12 +24,14 @@ public class Queue<Item> implements Iterable<Item>{
 		last = new Node();
 		last.item = item;
 		last.next = null;
+//		插入第一个节点
 		if(isEmpty())
 			first = last;
 		else
 			oldLast.next = last;
 		N++;
 	}
+//	假设至少有一个节点
 	public Item dequeue() {
 		//视角着眼于first节点
 		Node oldFirst = first;

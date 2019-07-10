@@ -33,6 +33,7 @@ public class QuickUnionUF {
 	public int find(int p) {
 		//找到根节点：当p不是根节点时，获取下一个节点继续判断
 		while (p != id[p])
+//			指向上一个节点
 			p = id[p];
 		//返回根节点
 		return p;

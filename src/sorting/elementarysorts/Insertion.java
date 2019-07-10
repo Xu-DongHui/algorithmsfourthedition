@@ -12,7 +12,7 @@ public class Insertion extends Example {
 		//for循环的执行过程：1.初始化int i = 1；2.判断i < N，如果为true则执行{}，如果是false则跳出循环；3.i++，再执行判断
 		for(int i = 1; i < N; i++) {
 			//将a[i]插入到a[i-1],a[i-2],a[i-3]...之中，i之前的元素已经有序
-			for(int j = i; j > 0 && less(a[j], a[j-1]); j--) {
+			for(int j = i; j >= 1 && less(a[j], a[j-1]); j--) {
 				exch(a, j, j - 1);
 			}
 			//a[i]已经有序地插入到i之前的元素中去了
