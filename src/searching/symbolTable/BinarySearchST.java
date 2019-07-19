@@ -1,6 +1,7 @@
 package searching.symbolTable;
 
-import fundamentals.linkednode.Queue;
+import edu.princeton.cs.algs4.Queue;
+
 
 /*【有序符号表】
  * 1.有序数组中的二分查找，有一对平行的数组，一个存储键，一个存储值，保证了数组中Comparable类型的键有序。

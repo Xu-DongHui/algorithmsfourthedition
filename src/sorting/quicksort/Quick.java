@@ -7,7 +7,7 @@ import sorting.Example;
  * 3.快速排序的缺点在于在切分不平衡数组时，排序会很低效。比如，第一次从最小的元素切分，第二次从第二小的元素切分，每次调用切分函数，只能移动一个元素，会导致大数组切分很多次。
  */
 
-public class Quick extends Example{
+public class Quick extends Example {
 	public static void sort(Comparable[] a) {
 		sort(a, 0, a.length - 1);
 	}
